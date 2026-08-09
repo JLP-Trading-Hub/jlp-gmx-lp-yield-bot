@@ -1,0 +1,26 @@
+{
+  "projectName": "jlp-gmx-lp-yield-bot",
+  "loopIntervalMs": 1000,
+  "defaultLoops": 3,
+  "startingCashUsd": 25000,
+  "targetJlpWeight": 0.55,
+  "targetGmWeight": 0.45,
+  "rebalanceBandPct": 0.05,
+  "jlpAprPct": 12.5,
+  "gmAprPct": 9.8,
+  "dragBpsPerLoop": 0.005,
+  "harvestFeeThresholdUsd": 25,
+  "maxRebalanceUsd": 5000,
+  "maxNetDeltaUsd": 8000,
+  "paper": {
+    "jlpPriceUsd": 3.42,
+    "gmPriceUsd": 1.08,
+    "priceNoiseBps": 5
+  },
+  "live": {
+    "solanaRpcUrl": "https://api.mainnet-beta.solana.com",
+    "arbitrumRpcUrl": "https://arb1.arbitrum.io/rpc",
+    "solanaPrivateKeyEnv": "SOLANA_PRIVATE_KEY",
+    "evmPrivateKeyEnv": "EVM_PRIVATE_KEY"
+  }
+}
