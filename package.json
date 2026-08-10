@@ -12,7 +12,9 @@
     "paper": "tsx src/index.ts --mode paper --loops 3",
     "live": "tsx src/index.ts --mode live --confirm-live",
     "typecheck": "tsc --noEmit",
-    "test": "tsx --test tests/*.test.ts"
+    "test": "tsx --test tests/*.test.ts",
+    "dashboard": "python3 -m http.server 4173 --directory dashboard",
+    "ui": "python3 -m http.server 4173 --directory dashboard"
   },
   "dependencies": {
     "@solana/web3.js": "^1.98.0",

@@ -27,6 +27,24 @@
 
 ---
 
+## Performance-Snapshot
+
+Demo-Analytics aus dem statischen Dashboard (`npm run dashboard`). Banner und Strategie-Diagramme bleiben erhalten.
+
+<p align="center">
+  <img src="docs/dashboard.jpg" alt="YieldOrbit — Performance-Dashboard" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/pnl.jpg" alt="YieldOrbit — PnL- / Equity-Ansicht" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/analytics.jpg" alt="YieldOrbit — Analytics-Streifen" width="100%" />
+</p>
+
+---
+
 ## Projekt-Workflow
 
 Vom Klonen bis Live: zuerst Paper, dann Credentials, Risk Guard immer aktiv.
@@ -49,6 +67,7 @@ flowchart LR
 | Befehle | |
 |---------|--|
 | `npm run paper` | Zuerst Paper-Modus |
+| `npm run dashboard` | Lokales Analytics-Dashboard öffnen (statisch) |
 | `npm run live` | Benötigt `--confirm-live` + Credentials |
 | `npm test` / `npm run typecheck` | CI-local gates |
 

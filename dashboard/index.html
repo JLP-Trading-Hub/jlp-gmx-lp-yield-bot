@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>YieldOrbit — LP Yield & IL Monitor</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="shell" data-layout="yieldCurves" data-project="jlp-gmx-lp-yield-bot">
+    
+<header class="top">
+  <div class="brand"><div class="logo">Y</div><div><h1>YieldOrbit</h1><p>JLP · GMX V2 · Net yield after IL</p></div></div>
+  <div class="title-block"><h2>LP Yield & IL Monitor</h2><div class="sub">GMX / JLP</div></div>
+  <div class="badge"><span class="dot"></span>PAPER</div>
+</header>
+<section class="kpis"><div class="kpi tone-a"><div class="lbl">Net APY</div><div class="val">18.4%</div><div class="sub">After IL estimate</div></div><div class="kpi tone-c"><div class="lbl">Gross Fees</div><div class="val">24.1%</div><div class="sub">Annualized</div></div><div class="kpi tone-warn"><div class="lbl">IL Drag</div><div class="val">-5.7%</div><div class="sub">30d estimate</div></div><div class="kpi tone-b"><div class="lbl">TVL Deployed</div><div class="val">$12.4k</div><div class="sub">Paper vault</div></div><div class="kpi tone-c"><div class="lbl">Rebalances</div><div class="val">16</div><div class="sub">Last 30d</div></div><div class="kpi tone-warn"><div class="lbl">Max DD</div><div class="val">-4.3%</div><div class="sub">Nav</div></div></section>
+<section class="grid2">
+  <article class="panel" style="--accent:var(--a)" data-shot="pnl">
+    <div class="row"><h3>Gross Fees vs Net Yield (APY)</h3><span class="pill">30D</span></div>
+    <canvas id="yield" height="300"></canvas>
+    <div class="meta"><span>Gross <b class="up">fees</b></span><span>Net <b class="up">after IL</b></span><span>IL drag shown as gap</span></div>
+  </article>
+  <article class="panel" style="--accent:var(--b)">
+    <div class="row"><h3>NAV Equity</h3><span class="pill">Rebalance markers</span></div>
+    <canvas id="nav" height="300"></canvas>
+    <div class="list" id="rb"></div>
+  </article>
+</section>
+<footer class="foot"><span>Yield is a residual. IL is a cost.</span><span>Built for GMX / JLP</span></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

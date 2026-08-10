@@ -27,6 +27,24 @@
 
 ---
 
+## 表现快照
+
+内置静态仪表盘演示数据（`npm run dashboard`）。横幅与策略流程图保持不变。
+
+<p align="center">
+  <img src="docs/dashboard.jpg" alt="YieldOrbit — 表现仪表盘" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/pnl.jpg" alt="YieldOrbit — 盈亏 / 权益视图" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/analytics.jpg" alt="YieldOrbit — 分析条" width="100%" />
+</p>
+
+---
+
 ## 项目工作流
 
 从克隆到实盘的完整路径：先模拟盘，后凭证，风控始终开启。
@@ -49,6 +67,7 @@ flowchart LR
 | 命令 | |
 |---------|--|
 | `npm run paper` | 先跑模拟盘 |
+| `npm run dashboard` | 打开本地分析仪表盘（静态） |
 | `npm run live` | 需要 `--confirm-live` 与有效凭证 |
 | `npm test` / `npm run typecheck` | CI-local gates |
 

@@ -27,6 +27,24 @@ En 2026 gran parte del “yield fácil” está del **otro lado de los traders**
 
 ---
 
+## Instantánea de rendimiento
+
+Analítica demo del dashboard estático incluido (`npm run dashboard`). El banner y los diagramas de estrategia se mantienen.
+
+<p align="center">
+  <img src="docs/dashboard.jpg" alt="YieldOrbit — Dashboard de rendimiento" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/pnl.jpg" alt="YieldOrbit — Vista de PnL / equity" width="100%" />
+</p>
+
+<p align="center">
+  <img src="docs/analytics.jpg" alt="YieldOrbit — Franja de analítica" width="100%" />
+</p>
+
+---
+
 ## Flujo del proyecto
 
 Camino completo de clon a live: primero paper, luego credenciales, riesgo siempre activo.
@@ -49,6 +67,7 @@ flowchart LR
 | Comandos | |
 |---------|--|
 | `npm run paper` | Primero modo paper |
+| `npm run dashboard` | Abrir dashboard de analítica local (estático) |
 | `npm run live` | Requiere `--confirm-live` + credenciales |
 | `npm test` / `npm run typecheck` | CI-local gates |
 
